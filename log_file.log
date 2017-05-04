@@ -1,0 +1,78 @@
+2017-05-01 22:34:44 ERROR DataBase:48 - Restore database failed
+2017-05-01 22:34:44 ERROR DataBase:28 - Tables not created
+2017-05-01 22:34:44 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-01 22:34:44 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-01 22:36:55 ERROR DataBase:48 - Restore database failed
+2017-05-01 22:36:55 ERROR DataBase:28 - Tables not created
+2017-05-01 22:36:55 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-01 22:36:55 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-01 22:38:39 ERROR DataBase:48 - Restore database failed
+2017-05-01 22:38:39 ERROR DataBase:28 - Tables not created
+2017-05-01 22:38:39 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-01 22:38:39 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-04 08:14:51 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:14:51 ERROR DataBase:28 - Tables not created
+2017-05-04 08:14:51 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-04 08:14:51 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-04 08:18:31 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:18:31 ERROR DataBase:28 - Tables not created
+2017-05-04 08:18:31 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-04 08:18:31 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-04 08:20:24 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:20:24 ERROR DataBase:28 - Tables not created
+2017-05-04 08:20:24 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-04 08:20:24 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-04 08:22:27 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:22:27 ERROR DataBase:28 - Tables not created
+2017-05-04 08:22:27 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-04 08:22:27 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-04 08:29:09 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:29:09 ERROR DataBase:28 - Tables not created
+2017-05-04 08:29:09 ERROR DataBase:135 - java.lang.NullPointerException: null
+2017-05-04 08:29:09 INFO  DataBase:137 - Recorded into Users successfully
+2017-05-04 08:31:32 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:31:32 ERROR DataBase:28 - Tables not created
+2017-05-04 08:31:32 ERROR DataBase:140 - java.lang.NullPointerException: null
+2017-05-04 08:31:32 INFO  DataBase:142 - Recorded into Users successfully
+2017-05-04 08:41:17 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:41:17 ERROR DataBase:28 - Tables not created
+2017-05-04 08:41:17 ERROR DataBase:140 - java.lang.NullPointerException: null
+2017-05-04 08:41:17 INFO  DataBase:142 - Recorded into Users successfully
+2017-05-04 08:45:08 ERROR DataBase:48 - Restore database failed
+2017-05-04 08:45:08 ERROR DataBase:28 - Tables not created
+2017-05-04 08:45:08 ERROR DataBase:140 - java.lang.NullPointerException: null
+2017-05-04 08:45:08 INFO  DataBase:142 - Recorded into Users successfully
+2017-05-04 08:59:22 INFO  DataBase:66 - Opened database successfully
+2017-05-04 08:59:22 INFO  DataBase:87 - Table Users created successfully
+2017-05-04 08:59:22 INFO  DataBase:108 - Table FileBase created successfully
+2017-05-04 08:59:22 ERROR DataBase:140 - java.sql.SQLException: 2 values for 3 columns
+2017-05-04 08:59:22 INFO  DataBase:142 - Recorded into Users successfully
+2017-05-04 08:59:22 INFO  DataBase:123 - Database closed successfully
+2017-05-04 09:03:01 INFO  DataBase:66 - Opened database successfully
+2017-05-04 09:03:01 INFO  DataBase:142 - Recorded into Users successfully
+2017-05-04 09:03:01 INFO  DataBase:123 - Database closed successfully
+2017-05-04 09:11:56 INFO  DataBase:66 - Opened database successfully
+2017-05-04 09:11:56 INFO  DataBase:123 - Database closed successfully
+2017-05-04 09:27:21 INFO  DataBase:66 - Opened database successfully
+2017-05-04 09:27:21 INFO  DataBase:173 - nareyko enter
+2017-05-04 09:27:21 ERROR DataBase:184 - java.sql.SQLException: ResultSet closed
+2017-05-04 09:27:21 INFO  DataBase:123 - Database closed successfully
+2017-05-04 09:27:41 INFO  DataBase:66 - Opened database successfully
+2017-05-04 09:27:41 INFO  DataBase:173 - nareykov enter
+2017-05-04 09:30:28 INFO  DataBase:66 - Opened database successfully
+2017-05-04 09:30:28 INFO  DataBase:173 - nareykov enter
+2017-05-04 10:01:18 INFO  DataBase:66 - Opened database successfully
+2017-05-04 10:01:18 INFO  DataBase:173 - nareykov enter
+2017-05-04 10:01:18 INFO  DataBase:123 - Database closed successfully
+2017-05-04 10:04:27 INFO  DataBase:66 - Opened database successfully
+2017-05-04 10:04:27 INFO  DataBase:173 - nareykov enter
+2017-05-04 10:04:27 INFO  DataBase:123 - Database closed successfully
+2017-05-04 10:16:21 INFO  DataBase:66 - Opened database successfully
+2017-05-04 10:16:21 INFO  DataBase:173 - nareykov enter
+2017-05-04 10:16:21 INFO  DataBase:123 - Database closed successfully
+2017-05-04 10:22:06 INFO  DataBase:66 - Opened database successfully
+2017-05-04 10:22:06 INFO  DataBase:173 - nareykov enter
+2017-05-04 10:22:06 INFO  DataBase:123 - Database closed successfully
+2017-05-04 10:22:14 INFO  DataBase:66 - Opened database successfully
+2017-05-04 10:22:14 INFO  DataBase:173 - nareykov enter
+2017-05-04 10:22:14 INFO  DataBase:123 - Database closed successfully
