@@ -76,3 +76,266 @@
 2017-05-04 10:22:14 INFO  DataBase:66 - Opened database successfully
 2017-05-04 10:22:14 INFO  DataBase:173 - nareykov enter
 2017-05-04 10:22:14 INFO  DataBase:123 - Database closed successfully
+2017-05-04 12:49:40 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:49:40 INFO  DataBase:89 - Table Users created successfully
+2017-05-04 12:49:40 INFO  DataBase:110 - Table FileBase created successfully
+2017-05-04 12:49:40 ERROR DataBase:126 - java.sql.SQLException: near "From": syntax error
+2017-05-04 12:49:40 ERROR DataBase:30 - Tables not created
+2017-05-04 12:49:40 INFO  DataBase:210 - 1 enter
+2017-05-04 12:49:40 ERROR DataBase:220 - java.sql.SQLException: ResultSet closed
+2017-05-04 12:49:40 INFO  DataBase:145 - Database closed successfully
+2017-05-04 12:52:49 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:52:49 INFO  DataBase:89 - Table Users created successfully
+2017-05-04 12:52:49 INFO  DataBase:110 - Table FileBase created successfully
+2017-05-04 12:52:49 ERROR DataBase:125 - java.sql.SQLException: near "From": syntax error
+2017-05-04 12:52:49 ERROR DataBase:30 - Tables not created
+2017-05-04 12:52:49 INFO  DataBase:209 - q enter
+2017-05-04 12:52:49 ERROR DataBase:219 - java.sql.SQLException: ResultSet closed
+2017-05-04 12:52:49 INFO  DataBase:144 - Database closed successfully
+2017-05-04 12:55:49 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:55:49 INFO  DataBase:210 - q enter
+2017-05-04 12:55:49 ERROR DataBase:220 - java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such table: Users)
+2017-05-04 12:55:49 INFO  DataBase:145 - Database closed successfully
+2017-05-04 12:56:09 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:56:09 INFO  DataBase:210 - nareykov enter
+2017-05-04 12:56:09 ERROR DataBase:220 - java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such table: Users)
+2017-05-04 12:56:09 INFO  DataBase:145 - Database closed successfully
+2017-05-04 12:56:20 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:56:20 ERROR DataBase:162 - java.sql.SQLException: no such table: Users
+2017-05-04 12:56:20 INFO  DataBase:164 - Recorded into Users successfully
+2017-05-04 12:56:20 INFO  DataBase:145 - Database closed successfully
+2017-05-04 12:56:26 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:56:26 INFO  DataBase:210 - nareykov enter
+2017-05-04 12:56:26 ERROR DataBase:220 - java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (no such table: Users)
+2017-05-04 12:56:26 INFO  DataBase:145 - Database closed successfully
+2017-05-04 12:59:13 INFO  DataBase:68 - Opened database successfully
+2017-05-04 12:59:13 INFO  DataBase:89 - Table Users created successfully
+2017-05-04 12:59:13 INFO  DataBase:110 - Table FileBase created successfully
+2017-05-04 12:59:13 INFO  DataBase:129 - Table FileBase created successfully
+2017-05-04 12:59:13 INFO  DataBase:164 - Recorded into Users successfully
+2017-05-04 12:59:13 INFO  DataBase:145 - Database closed successfully
+2017-05-04 13:00:15 INFO  DataBase:68 - Opened database successfully
+2017-05-04 13:00:15 INFO  DataBase:210 - qwe enter
+2017-05-04 13:00:15 INFO  DataBase:145 - Database closed successfully
+2017-05-04 13:00:32 INFO  DataBase:68 - Opened database successfully
+2017-05-04 13:00:32 INFO  DataBase:164 - Recorded into Users successfully
+2017-05-04 13:00:32 INFO  DataBase:145 - Database closed successfully
+2017-05-04 13:00:37 INFO  DataBase:68 - Opened database successfully
+2017-05-04 13:00:37 INFO  DataBase:210 - nareykov enter
+2017-05-04 13:00:37 INFO  DataBase:145 - Database closed successfully
+2017-05-04 13:00:43 INFO  DataBase:68 - Opened database successfully
+2017-05-04 13:00:43 INFO  DataBase:210 - nareykov enter
+2017-05-04 13:00:43 INFO  DataBase:145 - Database closed successfully
+2017-05-04 13:01:42 INFO  DataBase:68 - Opened database successfully
+2017-05-04 13:01:42 INFO  DataBase:210 - qwe enter
+2017-05-04 13:01:42 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:04:27 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:04:27 INFO  DataBase:89 - Table Users created successfully
+2017-05-04 22:04:27 INFO  DataBase:110 - Table FileBase created successfully
+2017-05-04 22:04:27 INFO  DataBase:129 - Table FileBase created successfully
+2017-05-04 22:04:27 INFO  DataBase:164 - Recorded into Users successfully
+2017-05-04 22:04:27 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:04:31 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:04:31 INFO  DataBase:210 - q enter
+2017-05-04 22:04:32 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:05:56 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:05:56 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:08:39 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:08:39 INFO  DataBase:210 - q enter
+2017-05-04 22:08:40 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:08:57 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:08:57 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:21:24 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:21:24 INFO  DataBase:210 - q enter
+2017-05-04 22:21:24 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:21:35 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:21:35 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:23:43 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:23:43 INFO  DataBase:210 - q enter
+2017-05-04 22:23:43 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:24:04 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:24:04 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:34:33 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:34:33 INFO  DataBase:210 - é enter
+2017-05-04 22:34:33 ERROR DataBase:220 - java.sql.SQLException: ResultSet closed
+2017-05-04 22:34:33 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:34:39 INFO  DataBase:68 - Opened database successfully
+2017-05-04 22:34:39 INFO  DataBase:210 - q enter
+2017-05-04 22:34:39 INFO  DataBase:145 - Database closed successfully
+2017-05-04 22:57:40 INFO  DataBase:66 - Opened database successfully
+2017-05-04 22:57:40 INFO  DataBase:208 - q enter
+2017-05-04 22:57:40 INFO  DataBase:143 - Database closed successfully
+2017-05-04 22:58:26 INFO  DataBase:66 - Opened database successfully
+2017-05-04 22:58:26 ERROR DataBase:195 - java.sql.SQLException: table Rooms has no column named User
+2017-05-04 23:00:56 INFO  DataBase:66 - Opened database successfully
+2017-05-04 23:00:56 INFO  DataBase:208 - q enter
+2017-05-04 23:00:56 INFO  DataBase:143 - Database closed successfully
+2017-05-04 23:01:19 INFO  DataBase:66 - Opened database successfully
+2017-05-04 23:01:19 INFO  DataBase:198 - Recorded into Records successfully
+2017-05-04 23:01:19 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:15:07 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:15:07 INFO  DataBase:208 - q enter
+2017-05-06 00:15:07 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:16:26 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:16:26 INFO  DataBase:208 - q enter
+2017-05-06 00:16:26 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:20:50 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:20:50 INFO  DataBase:198 - Recorded into Records successfully
+2017-05-06 00:20:50 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:20:59 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:20:59 INFO  DataBase:198 - Recorded into Records successfully
+2017-05-06 00:20:59 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:21:09 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:21:09 INFO  DataBase:208 - q enter
+2017-05-06 00:21:09 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:36:09 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:36:09 INFO  DataBase:208 - q enter
+2017-05-06 00:36:09 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:46:36 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:46:36 INFO  DataBase:208 - q enter
+2017-05-06 00:47:28 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:47:28 INFO  DataBase:208 - q enter
+2017-05-06 00:47:29 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:48:31 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:48:31 INFO  DataBase:208 - q enter
+2017-05-06 00:49:45 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:52:43 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:52:43 INFO  DataBase:208 - q enter
+2017-05-06 00:52:43 INFO  DataBase:143 - Database closed successfully
+2017-05-06 00:55:59 INFO  DataBase:66 - Opened database successfully
+2017-05-06 00:55:59 INFO  DataBase:208 - q enter
+2017-05-06 00:55:59 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:07:37 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:07:37 INFO  DataBase:208 - q enter
+2017-05-06 01:07:38 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:08:32 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:08:32 INFO  DataBase:208 - q enter
+2017-05-06 01:08:32 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:09:23 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:09:23 INFO  DataBase:208 - q enter
+2017-05-06 01:09:24 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:11:51 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:11:51 INFO  DataBase:208 - q enter
+2017-05-06 01:11:51 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:11:58 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:11:58 INFO  DataBase:198 - Recorded into Records successfully
+2017-05-06 01:11:58 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:14:37 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:14:37 INFO  DataBase:208 - q enter
+2017-05-06 01:14:38 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:18:34 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:18:34 INFO  DataBase:208 - q enter
+2017-05-06 01:18:34 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:20:01 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:20:01 INFO  DataBase:208 - q enter
+2017-05-06 01:20:02 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:21:32 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:21:32 INFO  DataBase:208 - q enter
+2017-05-06 01:22:56 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:22:56 INFO  DataBase:208 - q enter
+2017-05-06 01:22:56 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:26:45 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:26:45 INFO  DataBase:208 - q enter
+2017-05-06 01:26:59 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:27:45 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:27:45 INFO  DataBase:208 - q enter
+2017-05-06 01:28:42 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:29:01 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:29:01 INFO  DataBase:208 - q enter
+2017-05-06 01:29:01 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:31:03 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:31:03 INFO  DataBase:208 - q enter
+2017-05-06 01:31:03 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:32:46 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:32:46 INFO  DataBase:208 - q enter
+2017-05-06 01:32:46 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:41:14 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:41:14 INFO  DataBase:208 - q enter
+2017-05-06 01:41:14 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:48:34 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:48:34 INFO  DataBase:208 - q enter
+2017-05-06 01:48:34 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:49:27 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:49:27 INFO  DataBase:208 - q enter
+2017-05-06 01:49:27 INFO  DataBase:143 - Database closed successfully
+2017-05-06 01:54:03 INFO  DataBase:66 - Opened database successfully
+2017-05-06 01:54:03 INFO  DataBase:208 - q enter
+2017-05-06 01:54:03 INFO  DataBase:143 - Database closed successfully
+2017-05-06 02:09:50 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:09:50 INFO  DataBase:208 - q enter
+2017-05-06 02:13:08 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:13:08 INFO  DataBase:208 - q enter
+2017-05-06 02:14:11 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:14:11 INFO  DataBase:208 - q enter
+2017-05-06 02:18:32 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:18:32 INFO  DataBase:208 - q enter
+2017-05-06 02:23:12 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:23:12 INFO  DataBase:208 - q enter
+2017-05-06 02:26:03 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:26:03 INFO  DataBase:208 - q enter
+2017-05-06 02:26:03 INFO  DataBase:143 - Database closed successfully
+2017-05-06 02:27:42 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:27:42 INFO  DataBase:208 - q enter
+2017-05-06 02:33:30 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:33:30 INFO  DataBase:208 - q enter
+2017-05-06 02:37:49 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:37:49 INFO  DataBase:208 - q enter
+2017-05-06 02:43:38 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:43:38 INFO  DataBase:208 - q enter
+2017-05-06 02:48:17 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:48:17 INFO  DataBase:208 - q enter
+2017-05-06 02:50:18 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:50:18 INFO  DataBase:208 - q enter
+2017-05-06 02:53:50 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:53:50 INFO  DataBase:208 - q enter
+2017-05-06 02:57:46 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:57:46 INFO  DataBase:208 - q enter
+2017-05-06 02:58:34 INFO  DataBase:66 - Opened database successfully
+2017-05-06 02:58:34 INFO  DataBase:208 - q enter
+2017-05-06 02:58:34 INFO  DataBase:143 - Database closed successfully
+2017-05-06 03:02:18 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:02:18 INFO  DataBase:208 - q enter
+2017-05-06 03:02:18 INFO  DataBase:143 - Database closed successfully
+2017-05-06 03:12:16 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:12:16 INFO  DataBase:208 - q enter
+2017-05-06 03:16:57 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:16:57 INFO  DataBase:208 - q enter
+2017-05-06 03:17:25 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:17:25 INFO  DataBase:208 - q enter
+2017-05-06 03:19:15 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:19:15 INFO  DataBase:208 - q enter
+2017-05-06 03:23:58 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:23:58 INFO  DataBase:208 - q enter
+2017-05-06 03:28:54 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:28:54 INFO  DataBase:208 - q enter
+2017-05-06 03:32:34 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:32:34 INFO  DataBase:208 - q enter
+2017-05-06 03:33:52 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:33:52 INFO  DataBase:208 - q enter
+2017-05-06 03:33:52 INFO  DataBase:143 - Database closed successfully
+2017-05-06 03:36:18 INFO  DataBase:66 - Opened database successfully
+2017-05-06 03:36:18 INFO  DataBase:208 - q enter
+2017-05-06 03:36:18 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:06:55 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:06:55 INFO  DataBase:208 - q enter
+2017-05-06 04:06:55 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:07:11 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:07:11 INFO  DataBase:198 - Recorded into Records successfully
+2017-05-06 04:07:11 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:09:52 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:09:52 INFO  DataBase:208 - q enter
+2017-05-06 04:09:52 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:10:25 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:10:25 INFO  DataBase:208 - q enter
+2017-05-06 04:10:25 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:12:20 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:12:20 INFO  DataBase:208 - q enter
+2017-05-06 04:12:20 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:12:26 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:12:26 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:12:40 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:12:40 INFO  DataBase:198 - Recorded into Records successfully
+2017-05-06 04:12:40 INFO  DataBase:143 - Database closed successfully
+2017-05-06 04:15:27 INFO  DataBase:66 - Opened database successfully
+2017-05-06 04:15:27 INFO  DataBase:208 - q enter
+2017-05-06 04:15:27 INFO  DataBase:143 - Database closed successfully

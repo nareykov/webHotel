@@ -39,7 +39,7 @@ public class DataBase {
      */
     private boolean restoreDataBase() {
         if (this.openDataBase()) {
-            if (!this.createUsers() || !this.createFileBase()) {
+            if (!this.createUsers() || !this.createRooms() || !this.createRecords()) {
                 return false;
             } else {
                 return true;
@@ -92,12 +92,12 @@ public class DataBase {
      * Создание таблицы файлов.
      * @return true - таблица успешно создана, false - исключение
      */
-    private boolean createFileBase() {
+    private boolean createRooms() {
         try {
             stmt = c.createStatement();
-            String sql = "CREATE TABLE FileBase " +
-                    "(id       TEXT                NOT NULL," +
-                    " Name     TEXT                NOT NULL)";
+            String sql = "CREATE TABLE Rooms " +
+                    "(Number   TEXT                NOT NULL," +
+                    " Size     TEXT                NOT NULL)";
             stmt.executeUpdate(sql);
             stmt.close();
         } catch ( Exception e ) {
@@ -108,6 +108,26 @@ public class DataBase {
         log.info("Table FileBase created successfully");
         return true;
     }
+
+    private boolean createRecords() {
+        try {
+            stmt = c.createStatement();
+            String sql = "CREATE TABLE Records " +
+                    "(Number   TEXT                NOT NULL," +
+                    " User     TEXT                NOT NULL," +
+                    " DateFrom TEXT                NOT NULL," +
+                    " DateTo   TEXT                NOT NULL)";
+            stmt.executeUpdate(sql);
+            stmt.close();
+        } catch ( Exception e ) {
+            e.printStackTrace();
+            log.error(e.getClass().getName() + ": " + e.getMessage());
+            return false;
+        }
+        log.info("Table FileBase created successfully");
+        return true;
+    }
+
 
     /**
      * Закрывает базу данных.
@@ -124,7 +144,7 @@ public class DataBase {
     }
 
     /**
-     * Записывает в базу данных данных о новом юзере
+     * Записывает в базу данных данные о новом юзере
      * @param username имя юзера
      * @param pass пароль
      */
@@ -143,24 +163,39 @@ public class DataBase {
     }
 
     /**
-     * Запись в базу данных нового архива
-     * @param id айди архива
-     * @param name имя архива
+     * Записывает новую комнату в базу данных
+     * @param number номер комнаты
+     * @param size размер
      */
-    public void insertIntoFileBase(int id, String name) {
+    public void insertIntoRooms(int number, int size) {
         try {
             stmt = c.createStatement();
-            String sql = "INSERT INTO FileBase (id, Name) " +
-                    "VALUES ('" + Integer.toString(id) + "', '" + name + "');";
+            String sql = "INSERT INTO Rooms (Number, Size) " +
+                    "VALUES ('" + Integer.toString(number) + "', '" + Integer.toString(size) + "');";
             stmt.executeUpdate(sql);
-
             stmt.close();
         } catch ( Exception e ) {
             e.printStackTrace();
             log.error(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        log.info("Recorded into FileBase successfully");
+        log.info("Recorded into Rooms successfully");
+    }
+
+    public void insertIntoRecords(int number, String user, Date from, Date to) {
+        try {
+            stmt = c.createStatement();
+            String sql = "INSERT INTO Records (Number, User, DateFrom, DateTo) " +
+                    "VALUES ('" + Integer.toString(number) + "', '" + user + "', '"
+                    + from.toString() + "', '" + to.toString() + "');";
+            stmt.executeUpdate(sql);
+            stmt.close();
+        } catch ( Exception e ) {
+            e.printStackTrace();
+            log.error(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        log.info("Recorded into Records successfully");
     }
 
     /**
@@ -322,6 +357,20 @@ public class DataBase {
         } catch ( Exception e ) {
             //log.error("File " + id + " not removed from FileBase");
             return;
+        }
+    }
+
+    public ResultSet getUserRecords(String user) {
+        try {
+            stmt = c.createStatement();
+
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM Records WHERE User = '" + user + "';" );
+            return rs;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            log.error(e.toString());
+            return null;
         }
     }
 }

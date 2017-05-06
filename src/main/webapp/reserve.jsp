@@ -15,18 +15,18 @@
     <table align="center">
         <tr>
             <td>Дата заезда</td>
-            <td><input type="date"></td>
+            <td><input type="date" name="from"></td>
             <td>Дата выезда</td>
-            <td><input type="date"></td>
+            <td><input type="date" name="to"></td>
         </tr>
         <tr>
             <td>Количество спальных мест</td>
             <td>
                 <select name="size">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
             </td>
         </tr>
