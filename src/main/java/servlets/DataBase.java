@@ -3,6 +3,7 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * Класс с методамидля работы с базой данных
@@ -167,11 +168,11 @@ public class DataBase {
      * @param number номер комнаты
      * @param size размер
      */
-    public void insertIntoRooms(int number, int size) {
+    public void insertIntoRooms(String number, String size) {
         try {
             stmt = c.createStatement();
             String sql = "INSERT INTO Rooms (Number, Size) " +
-                    "VALUES ('" + Integer.toString(number) + "', '" + Integer.toString(size) + "');";
+                    "VALUES ('" + number + "', '" + size + "');";
             stmt.executeUpdate(sql);
             stmt.close();
         } catch ( Exception e ) {
@@ -217,6 +218,45 @@ public class DataBase {
         } catch ( SQLException e ) {
             log.error(e.toString());
             return false;
+        }
+        return false;
+    }
+
+    public int getFreeNumber(String size, Date from, Date to) {
+        try {
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM Rooms WHERE Size = '" + size + "';");
+            while (rs.next())
+            {
+                String number = rs.getString("Number");
+                if (!isRoomReserved(number, from, to)) {
+                    return Integer.parseInt(number);
+                }
+            }
+            rs.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
+    private boolean isRoomReserved(String number, Date from, Date to) {
+        try {
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM Records WHERE Number = '" + number + "';");
+            while (rs.next())
+            {
+                Date reservedFrom = Date.valueOf(rs.getString("DateFrom"));
+                Date reservedTo = Date.valueOf(rs.getString("DateTo"));
+                if (!(from.getTime() > reservedTo.getTime() || to.getTime() < reservedFrom.getTime())) {
+                    return true;
+                }
+            }
+            rs.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return false;
     }
@@ -365,6 +405,20 @@ public class DataBase {
             stmt = c.createStatement();
 
             ResultSet rs = stmt.executeQuery( "SELECT * FROM Records WHERE User = '" + user + "';" );
+            return rs;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            log.error(e.toString());
+            return null;
+        }
+    }
+
+    public ResultSet getRecords() {
+        try {
+            stmt = c.createStatement();
+
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM Records;" );
             return rs;
 
         } catch (SQLException e) {

@@ -18,15 +18,15 @@
         <div id="Reserve">
             <table align="center">
                 <tr>
-                    <td class="Text Prompt">Дата заезда</td>
+                    <td class="Text Prompt">Date from</td>
                     <td><input type="date" name="from" class="Field"></td>
                 </tr>
                 <tr>
-                    <td class="Text Prompt">Дата выезда</td>
+                    <td class="Text Prompt">Date to</td>
                     <td><input type="date" name="to" class="Field" ></td>
                 </tr>
                 <tr>
-                    <td class="Text Prompt">Количество спальных мест</td>
+                    <td class="Text Prompt">Size: </td>
                     <td>
                         <select name="size" class="Field Text">
                             <option selected value="1">1</option>
@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input align="center" type="submit" name="reserveButton" value="Забронировать номер" class="Text" id="ReserveButton"></td>
+                    <td><input align="center" type="submit" name="reserveButton" value="Reserve room" class="Text" id="ReserveButton"></td>
                 </tr>
             </table>
         </div>

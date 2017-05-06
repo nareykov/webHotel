@@ -26,7 +26,7 @@
         <div id="LogIn">
             <table>
                 <tr>
-                    <td id="UserName">Имя пользователя</td>
+                    <td id="UserName"  align="right">Имя пользователя</td>
                     <td><input type="text" name="username" id="UserNameField"></td>
                 </tr>
                 <tr>

@@ -50,6 +50,7 @@ public class RegisterServlet  extends HttpServlet {
                 req.setAttribute("err", "Заполните все поля");
                 getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);
             }
+            req.setAttribute("err", "");
             getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
         } else {
             getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);

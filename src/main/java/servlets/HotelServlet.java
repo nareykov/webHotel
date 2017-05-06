@@ -1,5 +1,6 @@
 package servlets;
 
+import classes.Record;
 import classes.ReserveRecord;
 
 import javax.servlet.ServletException;
@@ -30,8 +31,6 @@ public class HotelServlet extends HttpServlet {
         int answer = 0;
         HttpSession session = req.getSession();
 
-
-
         answer = checkAction(req);
 
         System.out.println(answer);
@@ -39,14 +38,27 @@ public class HotelServlet extends HttpServlet {
         if (answer == 1) {
             //Регистрация пользователя
             req.setAttribute("err", "");
-            getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);
+            if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                getServletContext().getRequestDispatcher("/registerRU.jsp").forward(req, resp);
+            } else {
+                getServletContext().getRequestDispatcher("/registerEN.jsp").forward(req, resp);
+            }
+            //getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);
         } else if (answer == 2) {
             //Вход пользователя
             String username = req.getParameter("username");
             String password = req.getParameter("password");
             if (username.equals("admin") && password.equals("admin")) {
-                req.setAttribute("err", "admin");
-                getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
+                db.connectToDataBase();
+                ArrayList<Record> records = makeRecordsList(db.getRecords());
+                db.closeDataBase();
+                req.setAttribute("records", records);
+                if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                    getServletContext().getRequestDispatcher("/adminRU.jsp").forward(req, resp);
+                } else {
+                    getServletContext().getRequestDispatcher("/adminEN.jsp").forward(req, resp);
+                }
+                //getServletContext().getRequestDispatcher("/admin.jsp").forward(req, resp);
             } else if (!(username.equals("") || password.equals(""))) {
                 db.connectToDataBase();
                 if (db.enter(username, password)) {
@@ -55,25 +67,46 @@ public class HotelServlet extends HttpServlet {
                     ArrayList<ReserveRecord> records = makeReserveRecordsList(db.getUserRecords(username));
                     req.setAttribute("records", records);
 
-                    getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
+                    if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                        getServletContext().getRequestDispatcher("/homeRU.jsp").forward(req, resp);
+                    } else {
+                        getServletContext().getRequestDispatcher("/homeEN.jsp").forward(req, resp);
+                    }
+                    //getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
                 } else {
                     req.setAttribute("err", "Incorrect login or password");
-                    getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
+                    if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                        getServletContext().getRequestDispatcher("/enterRU.jsp").forward(req, resp);
+                    } else {
+                        getServletContext().getRequestDispatcher("/enterEN.jsp").forward(req, resp);
+                    }
+                    //getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
                 }
                 db.closeDataBase();
             } else {
                 req.setAttribute("err", "Empty field");
-                getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
+                if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                    getServletContext().getRequestDispatcher("/enterRU.jsp").forward(req, resp);
+                } else {
+                    getServletContext().getRequestDispatcher("/enterEN.jsp").forward(req, resp);
+                }
+                //getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
             }
 
         } else if (answer == 3) {
             //Заброировать номер
-            getServletContext().getRequestDispatcher("/reserve.jsp").forward(req, resp);
+            if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                getServletContext().getRequestDispatcher("/reserveRU.jsp").forward(req, resp);
+            } else {
+                getServletContext().getRequestDispatcher("/reserveEN.jsp").forward(req, resp);
+            }
+            //getServletContext().getRequestDispatcher("/reserve.jsp").forward(req, resp);
         } else if (answer == 4) {
             //Выйти
             session.invalidate();
             req.setAttribute("err", "");
-            getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
+            getServletContext().getRequestDispatcher("/enterRU.jsp").forward(req, resp);
+            //getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
         } else if (answer == 5) {
             //Подтверждение брони
             db.connectToDataBase();
@@ -81,21 +114,71 @@ public class HotelServlet extends HttpServlet {
             Date to = Date.valueOf(req.getParameter("to"));
             String size = req.getParameter("size");
             String currUser = (String) session.getAttribute("user");
-            db.insertIntoRecords(2, currUser, from, to);
+            int number = db.getFreeNumber(size, from, to);
+            if (number >= 0) {
+                db.insertIntoRecords(number, currUser, from, to);
+            } else {
+                System.out.println("No FRee");
+            }
             ArrayList<ReserveRecord> records = makeReserveRecordsList(db.getUserRecords(String.valueOf(session.getAttribute("user"))));
             db.closeDataBase();
             req.setAttribute("records", records);
-            getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
+            if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                getServletContext().getRequestDispatcher("/homeRU.jsp").forward(req, resp);
+            } else {
+                getServletContext().getRequestDispatcher("/homeEN.jsp").forward(req, resp);
+            }
+            //getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
+        } else if (answer == 6) {
+            //Добавление нового номера
+            String number = req.getParameter("number");
+            String size = req.getParameter("size");
+            if (!(number.equals("") || number == null)) {
+                db.connectToDataBase();
+                db.insertIntoRooms(number, size);
+                db.closeDataBase();
+            } else {
+                System.out.println("Empty size");
+            }
+            db.connectToDataBase();
+            ArrayList<Record> records = makeRecordsList(db.getRecords());
+            db.closeDataBase();
+            req.setAttribute("records", records);
+            if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                getServletContext().getRequestDispatcher("/adminRU.jsp").forward(req, resp);
+            } else {
+                getServletContext().getRequestDispatcher("/adminEN.jsp").forward(req, resp);
+            }
+            //getServletContext().getRequestDispatcher("/admin.jsp").forward(req, resp);
+        } else if (answer == 7) {
+            //Изменение языка
+            session.setAttribute("language", req.getParameter("lang"));
+            req.setAttribute("err", "");
+            if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                getServletContext().getRequestDispatcher("/enterRU.jsp").forward(req, resp);
+            } else {
+                getServletContext().getRequestDispatcher("/enterEN.jsp").forward(req, resp);
+            }
         } else{
             if (session.getAttribute("user") != null) {
                 db.connectToDataBase();
                 ArrayList<ReserveRecord> records = makeReserveRecordsList(db.getUserRecords(String.valueOf(session.getAttribute("user"))));
                 db.closeDataBase();
                 req.setAttribute("records", records);
-                getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
+                if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                    getServletContext().getRequestDispatcher("/homeRU.jsp").forward(req, resp);
+                } else {
+                    getServletContext().getRequestDispatcher("/homeEN.jsp").forward(req, resp);
+                }
+                //getServletContext().getRequestDispatcher("/home.jsp").forward(req, resp);
             }
             req.setAttribute("err", "");
-            getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
+            if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
+                getServletContext().getRequestDispatcher("/enterRU.jsp").forward(req, resp);
+            } else {
+                getServletContext().getRequestDispatcher("/enterEN.jsp").forward(req, resp);
+            }
+            //getServletContext().getRequestDispatcher("/enter.jsp").forward(req, resp);
         }
     }
 
@@ -116,6 +199,12 @@ public class HotelServlet extends HttpServlet {
         }
         if (req.getParameter("reserveButton") != null) {
             return 5;
+        }
+        if (req.getParameter("newRoomButton") != null) {
+            return 6;
+        }
+        if (req.getParameter("langButton") != null) {
+            return 7;
         }
         return 0;
     }
@@ -138,6 +227,24 @@ public class HotelServlet extends HttpServlet {
                 record.setNumber(rs.getString("number"));
                 record.setDateFrom(rs.getString("DateFrom"));
                 record.setDateTo(rs.getString("DateTo"));
+                records.add(record);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return records;
+    }
+
+    private ArrayList<Record> makeRecordsList(ResultSet rs) {
+        ArrayList<Record> records = new ArrayList<Record>();
+        try {
+            while (rs.next())
+            {
+                Record record = new Record();
+                record.setNumber(rs.getString("Number"));
+                record.setUser(rs.getString("User"));
+                record.setFrom(rs.getString("DateFrom"));
+                record.setTo(rs.getString("DateTo"));
                 records.add(record);
             }
         } catch (SQLException e) {

@@ -26,16 +26,16 @@
         <div id="LogIn">
             <table>
                 <tr>
-                    <td id="UserName">Имя пользователя</td>
+                    <td id="UserName" align="right">Username</td>
                     <td><input type="text" name="username" id="UserNameField"></td>
                 </tr>
                 <tr>
-                    <td id="Password">Пароль</td>
+                    <td id="Password">Password</td>
                     <td><input type="password" name="password"  id="PasswordField"></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name="regButton" value="Регистрация" id="RegistrationButton"></td>
-                    <td align="right"><input type="submit" name="entButton" value="  Вход  " id="SignUpButton"></td>
+                    <td><input type="submit" name="regButton" value="Register" id="RegistrationButton"></td>
+                    <td align="right"><input type="submit" name="entButton" value="  Enter  " id="SignUpButton"></td>
                 </tr>
                 <tr >
                     <td colspan="2" >

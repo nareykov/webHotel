@@ -17,26 +17,25 @@
 <body>
 <form method="post" action="hotel">
     <div align="right" id="Out">
-        Дратути, <%=session.getAttribute("user") + "    "%>
-        <input type="submit" name="exitButton" value="Выйти" id="OutButton">
+        Hello, <%=session.getAttribute("user") + "    "%>
+        <input type="submit" name="exitButton" value="Exit" id="OutButton">
     </div>
     <div id="Content">
         <div align="center" id="TextMessage">
             <table>
                 <c:forEach items="${records}" var="cell">
                     <tr>
-                        <td align="left">Номер: ${cell.number}</td>
-                        <td align="left">Дата заезда: ${cell.dateFrom}</td>
-                        <td align="left">Дата отъезда: ${cell.dateTo}</td>
+                        <td align="left">Number: ${cell.number}</td>
+                        <td align="left">Date from: ${cell.dateFrom}</td>
+                        <td align="left">Date to: ${cell.dateTo}</td>
                     </tr>
                 </c:forEach>
             </table>
         </div>
         <div align="center">
-            <input type="submit" name="reserveJsp" value="Забронировать номер" id="ReserveButton">
+            <input type="submit" name="reserveJsp" value="Reserve room" id="ReserveButton">
         </div>
     </div>
 </form>
 </body>
 </html>
-

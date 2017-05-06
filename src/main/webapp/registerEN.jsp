@@ -18,20 +18,20 @@
         <div id="Registration">
             <table>
                 <tr>
-                    <td class="Text Prompt">Логин</td>
+                    <td class="Text Prompt">Username</td>
                     <td><input type="text" name="username" class="Field"></td>
                 </tr>
                 <tr>
-                    <td class="Text Prompt">Пароль</td>
+                    <td class="Text Prompt">Password</td>
                     <td><input type="password" name="password" class="Field"></td>
                 </tr>
                 <tr>
-                    <td class="Text Prompt" >Подтверждение</td>
+                    <td class="Text Prompt" >Confirm</td>
                     <td><input type="password" name="confirm" class="Field"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td align="right"><input type="submit" name="regButton" value="Регистрация" id="RegistrationButton"></td>
+                    <td align="right"><input type="submit" name="regButton" value="Register" id="RegistrationButton"></td>
                 </tr>
                 <tr >
                     <td colspan="2" >
