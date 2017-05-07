@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by narey on 01.05.2017.
+ * Сервлет для регистрации
  */
 
 @WebServlet("/register")
@@ -58,7 +58,11 @@ public class RegisterServlet  extends HttpServlet {
 
     }
 
-    // Здесь мы проверям какое действие нам надо сделать – и возвращаем ответ
+    /**
+     * Определяет тип действия
+     * @param req запрос
+     * @return тип
+     */
     private int checkAction(HttpServletRequest req) {
         if (req.getParameter("regButton") != null) {
             return 1;

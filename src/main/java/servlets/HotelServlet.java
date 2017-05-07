@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
- * Created by narey on 01.05.2017.
+ * Сервлет обрабатывающий все действия пользователя
  */
 @WebServlet("/hotel")
 public class HotelServlet extends HttpServlet {
@@ -182,7 +182,11 @@ public class HotelServlet extends HttpServlet {
         }
     }
 
-    // Здесь мы проверям какое действие нам надо сделать – и возвращаем ответ
+    /**
+     * Определяем тип действия
+     * @param req запрос
+     * @return тип
+     */
     private int checkAction(HttpServletRequest req) {
 
         if (req.getParameter("regButton") != null) {
@@ -218,6 +222,11 @@ public class HotelServlet extends HttpServlet {
         processRequest(req, resp);
     }
 
+    /**
+     * Формирует список ReserveRecord
+     * @param rs result set
+     * @return список
+     */
     private ArrayList<ReserveRecord> makeReserveRecordsList(ResultSet rs) {
         ArrayList<ReserveRecord> records = new ArrayList<ReserveRecord>();
         try {
@@ -235,6 +244,11 @@ public class HotelServlet extends HttpServlet {
         return records;
     }
 
+    /**
+     * Формирует список Record
+     * @param rs result set
+     * @return список
+     */
     private ArrayList<Record> makeRecordsList(ResultSet rs) {
         ArrayList<Record> records = new ArrayList<Record>();
         try {

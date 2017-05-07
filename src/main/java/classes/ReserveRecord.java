@@ -1,7 +1,7 @@
 package classes;
 
 /**
- * Created by narey on 05.05.2017.
+ * Класс-строка таблицы забронированных номеров
  */
 public class ReserveRecord {
 

@@ -3,7 +3,6 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.sql.*;
-import java.util.ArrayList;
 
 /**
  * Класс с методамидля работы с базой данных
@@ -262,87 +261,6 @@ public class DataBase {
     }
 
     /**
-     * Получаем таблицу юзеров из базы данных
-     * @return таблица
-     */
-    public ResultSet getUsersResultSet() {
-
-        try {
-            stmt = c.createStatement();
-
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM Users;" );
-            return rs;
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            log.error(e.toString());
-            return null;
-        }
-    }
-
-    /**
-     * Получаем таблицу архивов из базы данных
-     * @return таблица
-     */
-    public ResultSet getFileBaseResultSet() {
-
-        try {
-            stmt = c.createStatement();
-
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM FileBase;" );
-            return rs;
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            log.error(e.toString());
-            return null;
-        }
-    }
-
-    /**
-     * Меняет имя архива
-     * @param id айди архива
-     * @param newName новое имя
-     */
-    public void changeName(int id, String newName) {
-
-        //log.info("Changing name: id(" + id + ") to " + newName);
-
-        try {
-            stmt = c.createStatement();
-
-            String sql = "UPDATE FileBase SET Name = '" + newName + "' WHERE id = '" + Integer.toString(id) + "';";
-            stmt.executeUpdate(sql);
-            stmt.close();
-
-        } catch ( Exception e ) {
-            e.printStackTrace();
-            log.error(e.toString());
-        }
-    }
-
-    /**
-     * Меняет уровень прав юзера
-     * @param username имя юзера
-     * @param priority новый уровень прав
-     */
-    public void changePriority(String username, int priority) {
-
-        //log.info("Changing " + username + " priority to " + priority);
-
-        try {
-            stmt = c.createStatement();
-
-            String sql = "UPDATE Users SET Priority = " + Integer.toString(priority) + " WHERE Username = '" + username + "';";
-            stmt.executeUpdate(sql);
-            stmt.close();
-
-        } catch ( Exception e ) {
-            //log.error(e.toString());
-        }
-    }
-
-    /**
      * Проверяет был ли зарегистрирован пользователь ранее.
      * @return Если уже зарегистрирован - true, если нет - false.
      */
@@ -362,42 +280,6 @@ public class DataBase {
             return false;
         }
         return false;
-    }
-
-    /**
-     * Получает уровень прав юзера
-     * @param username имя юзера
-     * @return уровень прав
-     */
-    public int getPriority(String username) {
-        try {
-            stmt = c.createStatement();
-
-            ResultSet rs = stmt.executeQuery( "SELECT * FROM Users WHERE Username = '" + username + "';" );
-            int priority = Integer.parseInt(rs.getString("Priority"));
-            return priority;
-
-        } catch ( Exception e ) {
-            //log.error(e.toString());
-            return -1;
-        }
-    }
-
-    /**
-     * Удаляет архив из базы данных
-     * @param id айди архива
-     */
-    public void removeFromFileBase(int id) {
-        try {
-            stmt = c.createStatement();
-
-            String sql = "DELETE FROM FileBase WHERE id = '" + Integer.toString(id) + "';";
-            stmt.executeUpdate(sql);
-
-        } catch ( Exception e ) {
-            //log.error("File " + id + " not removed from FileBase");
-            return;
-        }
     }
 
     public ResultSet getUserRecords(String user) {
