@@ -1,0 +1,78 @@
+body {
+    background-color: #DBDBDB;
+}
+
+#LogIn {
+    border: 2px solid #404040;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    margin-left: 38%;
+    width: 24%;
+    padding: 20px;
+    margin-top: 15%;
+    height: 15%;
+    box-shadow: 3px 4px 10px;
+}
+
+#UserNameField {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#PasswordField {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#RegistrationButton {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 23px;
+    width: 120px;
+}
+
+#SignUpButton {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 23px;
+    width: 120px;
+}
+
+#langButton {
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 23px;
+    width: 40px;
+}
+
+#UserName {
+    font-family: "Tahoma";
+    font-size: 14px;
+}
+
+#Password {
+    font-family: "Tahoma";
+    font-size: 14px;
+    text-align: right;
+}
+
+.Text {
+    font-family: "Tahoma";
+    font-size: 14px;
+    margin: 5px;
+}
+
+.Field {
+    margin: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}

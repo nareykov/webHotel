@@ -1,0 +1,40 @@
+body{
+    background-color: #DBDBDB;
+}
+
+#Registration{
+    border: 2px solid #404040;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    margin-left: 39%;
+    width: 22%;
+    padding: 20px;
+    margin-top: 15%;
+    height: 17%;
+    box-shadow: 3px 4px 10px;
+}
+
+.Text{
+    font-family: "Tahoma";
+    font-size: 14px;
+}
+
+.Field{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#RegistrationButton{
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 23px;
+    width: 120px;
+    font-family: "Tahoma";
+    font-size: 14px;
+}
+.Prompt{
+    text-align: right;
+}
