@@ -20,37 +20,62 @@
         <input type="submit" name="exitButton" value="Выйти" id="OutButton">
     </div>
     <div id="Content">
-        <div align="center" id="TextMessage">
-            <table>
-                <tr>
-                    <th>Имя пользователя</th><th>Номер</th><th>Дата заезда</th><th>Дата выезда</th>
-                </tr>
-                <c:forEach items="${records}" var="cell">
-                    <tr>
-                        <td align="left">${cell.user}</td>
-                        <td align="left">${cell.number}</td>
-                        <td align="left">${cell.from}</td>
-                        <td align="left">${cell.to}</td>
-                    </tr>
-                </c:forEach>
-            </table>
-        </div>
+        <table>
+            <tr>
+                <td valign="top">
+                    <table>
+                        <tr>
+                            <th>Имя пользователя</th><th>Номер</th><th>Дата заезда</th><th>Дата выезда</th>
+                        </tr>
+                        <c:forEach items="${records}" var="cell">
+                            <tr>
+                                <td align="left">${cell.user}</td>
+                                <td align="left">${cell.number}</td>
+                                <td align="left">${cell.from}</td>
+                                <td align="left">${cell.to}</td>
+                            </tr>
+                        </c:forEach>
+                    </table>
+                </td>
+                <td valign="top">
+                    <table>
+                        <tr>
+                            <td id="Number">Номер</td>
+                            <td id="Size">Размер</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="number"  id="NumberField">
+                            </td>
+                            <td>
+                                <select name="size" class="Field Text">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" name="newRoomButton" value="Добавить номер" id="ReserveButton">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Номер</th><th>Статус</th>
+                        </tr>
+                        <c:forEach items="${rooms}" var="ttt">
+                            <tr>
+                                <td align="left">${ttt.number}</td>
+                                <td align="left">${ttt.size}</td>
+                            </tr>
+                        </c:forEach>
+                    </table>
+                </td>
+            </tr>
+        </table>
         <br>
-        <div align="center">
-            <td id="Number">Номер</td>
-            <input type="text" name="number"  id="NumberField">
-            <td id="Size">Размер</td>
-            <select name="size" class="Field Text">
-                <option selected value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-        </div>
-        <br>
-        <div align="center">
-            <input type="submit" name="newRoomButton" value="Добавить номер" id="ReserveButton">
-        </div>
+
     </div>
 </form>
 </body>

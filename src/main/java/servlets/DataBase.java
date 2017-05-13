@@ -309,4 +309,18 @@ public class DataBase {
             return null;
         }
     }
+
+    public ResultSet getRooms() {
+        try {
+            stmt = c.createStatement();
+
+            ResultSet rs = stmt.executeQuery( "SELECT * FROM Rooms;" );
+            return rs;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            log.error(e.toString());
+            return null;
+        }
+    }
 }

@@ -643,3 +643,84 @@
 2017-05-06 20:45:58 INFO  DataBase:67 - Opened database successfully
 2017-05-06 20:45:58 INFO  DataBase:209 - nareykov enter
 2017-05-06 20:45:58 INFO  DataBase:144 - Database closed successfully
+2017-05-13 18:06:33 INFO  DataBase:67 - Opened database successfully
+2017-05-13 18:06:33 INFO  DataBase:209 - nareykov enter
+2017-05-13 18:06:34 INFO  DataBase:144 - Database closed successfully
+2017-05-13 18:07:29 INFO  DataBase:67 - Opened database successfully
+2017-05-13 18:07:29 INFO  DataBase:199 - Recorded into Records successfully
+2017-05-13 18:07:29 INFO  DataBase:144 - Database closed successfully
+2017-05-13 18:08:03 INFO  DataBase:67 - Opened database successfully
+2017-05-13 18:08:03 INFO  DataBase:144 - Database closed successfully
+2017-05-13 18:12:37 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:12:37 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:24:11 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:24:11 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:27:01 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:27:01 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:28:12 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:28:12 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:32:28 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:32:28 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:32:45 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:32:45 INFO  DataBase:208 - nareykov enter
+2017-05-13 18:32:45 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:36:17 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:36:17 INFO  DataBase:208 - nareykov enter
+2017-05-13 18:36:17 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:36:24 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:36:24 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:38:43 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:38:43 INFO  DataBase:143 - Database closed successfully
+2017-05-13 18:58:44 INFO  DataBase:66 - Opened database successfully
+2017-05-13 18:58:44 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:02:08 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:02:08 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:05:08 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:05:08 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:33:51 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:33:51 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:42:00 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:42:00 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:43:03 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:43:03 INFO  DataBase:182 - Recorded into Rooms successfully
+2017-05-13 19:43:03 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:43:03 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:43:03 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:48:11 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:48:11 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:51:04 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:51:04 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:52:39 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:52:39 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:56:45 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:56:45 INFO  DataBase:143 - Database closed successfully
+2017-05-13 19:58:10 INFO  DataBase:66 - Opened database successfully
+2017-05-13 19:58:10 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:04:52 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:04:52 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:25:05 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:25:05 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:26:45 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:26:45 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:28:15 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:28:15 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:32:34 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:32:34 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:34:41 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:34:41 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:38:47 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:38:47 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:39:00 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:39:00 INFO  DataBase:182 - Recorded into Rooms successfully
+2017-05-13 20:39:00 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:39:00 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:39:00 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:39:07 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:39:07 INFO  DataBase:182 - Recorded into Rooms successfully
+2017-05-13 20:39:07 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:39:07 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:39:07 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:42:34 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:42:34 INFO  DataBase:143 - Database closed successfully
+2017-05-13 20:42:56 INFO  DataBase:66 - Opened database successfully
+2017-05-13 20:42:56 INFO  DataBase:143 - Database closed successfully

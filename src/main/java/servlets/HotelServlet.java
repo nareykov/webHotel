@@ -2,6 +2,7 @@ package servlets;
 
 import classes.Record;
 import classes.ReserveRecord;
+import classes.Room;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -51,8 +51,10 @@ public class HotelServlet extends HttpServlet {
             if (username.equals("admin") && password.equals("admin")) {
                 db.connectToDataBase();
                 ArrayList<Record> records = makeRecordsList(db.getRecords());
+                ArrayList<Room> rooms = makeRoomsList(db.getRooms());
                 db.closeDataBase();
                 req.setAttribute("records", records);
+                req.setAttribute("rooms", rooms);
                 if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
                     getServletContext().getRequestDispatcher("/adminRU.jsp").forward(req, resp);
                 } else {
@@ -142,8 +144,10 @@ public class HotelServlet extends HttpServlet {
             }
             db.connectToDataBase();
             ArrayList<Record> records = makeRecordsList(db.getRecords());
+            ArrayList<Room> rooms = makeRoomsList(db.getRooms());
             db.closeDataBase();
             req.setAttribute("records", records);
+            req.setAttribute("rooms", rooms);
             if (session.getAttribute("language") == null || session.getAttribute("language").equals("RU")) {
                 getServletContext().getRequestDispatcher("/adminRU.jsp").forward(req, resp);
             } else {
@@ -265,5 +269,22 @@ public class HotelServlet extends HttpServlet {
             e.printStackTrace();
         }
         return records;
+    }
+
+    private ArrayList<Room> makeRoomsList(ResultSet rs) {
+        ArrayList<Room> rooms = new ArrayList<Room>();
+        try {
+            while (rs.next())
+            {
+                Room room = new Room();
+                room.setNumber(rs.getString("Number"));
+                room.setSize(rs.getString("Size"));
+                rooms.add(room);
+                System.out.println(room.getNumber() + room.getSize());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rooms;
     }
 }
